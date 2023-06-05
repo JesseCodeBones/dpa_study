@@ -6,7 +6,7 @@ int main(int, char **) {
   std::string source = "int a = 1;";
   std::string_view input = source;
   std::string_view alphabetTable[] = {"int", "a", "=", "1", ";"};
-  std::string_view stackTable[] = {"ε","stmt", "var", "expr", "assignment","intLiteral", "$"};
+  std::string_view stackTable[] = {"ε", "stmt", "var", "expr", "assignment", "intLiteral", "$"};
   std::string_view status[] = {"q0", "q1", "q2"};
 
   // init
