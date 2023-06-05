@@ -48,5 +48,8 @@ int main(int, char **) {
     stackView.push("ε");
   }
 
-  std::cout << input << std::endl;
+  while (!stackView.empty()) {
+    std::cout << stackView.top() << std::endl;
+    stackView.pop();
+  }
 }
